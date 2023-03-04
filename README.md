@@ -10,6 +10,12 @@ Bash tool used for proactive detection of malicious activity on macOS systems.
 
 I was inspired by [Venator-Swift](https://github.com/richiercyrus/Venator-Swift) and decided to create a bash version of the tool.
 
+## OneLiner command
+
+```bash
+curl https://raw.githubusercontent.com/ab2pentest/MacOSThreatTrack/main/MacOSThreatTrack.sh | bash
+```
+
 ## Gathered information
 
 ```
