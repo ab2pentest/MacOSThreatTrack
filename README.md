@@ -1,4 +1,4 @@
-# MacOS-ThreatTrack
+# MacOS ThreatTrack
 
 > The tool is being tested in the beta phase, and it only gathers MacOS system information at this time.
 
