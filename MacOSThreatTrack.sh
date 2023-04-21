@@ -1,7 +1,7 @@
 #!/bin/bash
 
 getSystemInfo() {
-	hostname=$(scutil --get HostName)
+	hostname=$(hostname)
 	uuid=$(system_profiler SPHardwareDataType | awk '/UUID/ {print $3}')
 	macos_version=$(sw_vers -productVersion)
 	kernel_version=$(sysctl -n kern.version)
@@ -11,16 +11,16 @@ getSystemInfo() {
 	disk_info=$(diskutil list)
 	network_info=$(ifconfig -a)
 	echo ""
-	echo "[-] Hostname: $hostname" 
-	echo "[-] UUID: $uuid"
-	echo "[-] macOS Version: $macos_version"
-	echo "[-] Kernel Version: $kernel_version"
-	echo "[-] Processor: $processor_info"
-	echo "[-] Total Memory: $total_memory MB"
-	echo "[-] Disk Info: "
+	echo "[*] Hostname: $hostname" 
+	echo "[*] UUID: $uuid"
+	echo "[*] macOS Version: $macos_version"
+	echo "[*] Kernel Version: $kernel_version"
+	echo "[*] Processor: $processor_info"
+	echo "[*] Total Memory: $total_memory MB"
+	echo "[*] Disk Info: "
 	echo "$disk_info"
 	echo "----------------------------"
-	echo "[-] Network Info: "
+	echo "[*] Network Info: "
 	echo "$network_info"
 	echo "----------------------------"
 	echo ""
